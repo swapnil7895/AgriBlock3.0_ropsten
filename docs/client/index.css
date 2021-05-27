@@ -1,0 +1,52 @@
+
+#h-1{
+    background-color: brown;
+    float:none;
+}
+#html-id
+{
+    background-color: green;
+}
+#h1{
+    font-size: xx-large;
+    background-color: maroon;
+    color: beige;
+}
+
+
+#div-1{
+    display:inline-block;
+    font-size: x-large;
+    color: black;
+
+}
+
+#h2
+{
+    color: aliceblue;
+    background-color: rgb(87, 2, 2);
+}
+
+
+#h1h
+    {
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 0 0 5px rgb(16, 18, 19), 0 0 10px rgb(5, 3, 3), 0 0 15px #0a0a08, 0 0 20px #16180d;
+        text-align: center;
+        color:rgb(249, 252, 252);
+        font-weight: 2300;
+        letter-spacing: 15px ;
+      }
+#h1h2
+{
+    color: lightgreen;
+    font-family: sans-serif;
+    letter-spacing: 40px;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 0 0 5px rgb(16, 18, 19), 0 0 10px rgb(5, 3, 3), 0 0 15px #0a0a08, 0 0 20px #16180d;
+
+
+}
+

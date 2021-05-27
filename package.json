@@ -1,0 +1,24 @@
+{
+  "name": "Agriblock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "dotenv": "^4.0.0",
+    "truffle-hdwallet-provider": "0.0.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0-rc.0",
+    "@truffle/hdwallet-provider": "^1.4.0"
+  }
+}

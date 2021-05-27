@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+    
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <title>get block details</title>
+</head>
+<body style="background-image:url(./img/12.jpg) ;background-position: center; background-repeat: no-repeat;background-attachment: fixed;background-size:cover;">
+
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="./img/ab.png" width="180" height="60" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home <span class="sr-only"></span></a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" href="./getTransaction23.html">Get transaction</a>
+          </li>
+    
+        </ul>
+      </div>
+    </nav>
+  
+    
+
+    
+    
+     <div>
+        <div id="div-1">
+            <br>
+            <button type="button" class="btn btn-dark btn-lg">Enter block number</button>
+            <input type="text"  id="block-no" value="latest">
+            <button onclick="getBlock()" type="button" class="btn btn-primary btn-lg">Click here to get block</button>
+        </div>
+
+        <div id="table-div"> 
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Properties</th>
+                    <th scope="col">Values</th>
+                  </tr>
+                </thead>
+                <tbody id="tb-body">
+                    <br><div><h3 style="color: azure;font-family: sans-serif;" id="block-p"><b> Block details will  appear here</b></p></div>
+                </tbody>
+              </table>
+        </div>
+
+        <script type="text/javascript" src="./node_modules/web3/dist/web3.min.js"></script>
+    <script type="text/javascript" src="./artifacts/AgriBlockAbi.js"></script>
+    <script type="text/javascript" src="./artifacts/AgriBlockAddress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    <script src="./getBlock.js"></script>
+    <link rel="stylesheet" href="./farmerRegister.css">
+</body>
+</html>
+
+
