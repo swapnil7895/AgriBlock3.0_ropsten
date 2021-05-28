@@ -20,7 +20,7 @@ module.exports = {
             shareNonce: true
           }
         ),
-      gasPrice: 25000000000000000,
+      gasPrice: 2500000000000,
       network_id: 3,
       networkCheckTimeout: 1000000,
       timeoutBlocks: 200
