@@ -41,7 +41,7 @@ const handleDealerRegister = () => {
       gasPrice: 10000,
       gas: 1000000
     })
-    .on('transactionHash', h => { alert("Registered successfully!!\nTransaction hash: " + h) })
+    .on('transactionHash', h => { alert(" Wait till transaction is being confirmed.. \nTransaction hash: " + h) })
     .on('reciept', r => alert(r))
     .on('confirmation', c => { console.log(c) })
     .on('error', e => { alert(e.message) })
