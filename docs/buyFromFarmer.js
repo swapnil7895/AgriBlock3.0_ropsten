@@ -52,6 +52,14 @@ const handleWeiCal = () => {
         },
         (error,result) => {
             if(!error)
+            {amt.value = result;}
+            else
+            {alert(error.message);}
+            }
+        )
+        .then(
+                 (error,result) => {
+            if(!error)
             {amt.value = result;
             alert(result);}
             else
@@ -59,8 +67,8 @@ const handleWeiCal = () => {
                 alert(error.message);
             }
             }
-        )
-        .then()
+           
+            )
     //}
     // catch(error)
     // {
