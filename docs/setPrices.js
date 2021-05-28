@@ -48,7 +48,7 @@ const handleSetPrice = () => {
       gas: 1000000
     })
     .on('confirmation', c => { console.log(c) })
-    .on('transactionHash', h => { alert("Transaction hash :  " + h + "\n Price set done"); console.log(h);})
+    .on('transactionHash', h => { alert(" Wait till transaction is being confirmed.. \nTransaction hash :  " + h); console.log(h);})
     .on('error', err => { alert("Error : "+err.message)})
     .then(result => {
                     alert("Price set done.\nTransaction hash"+result.transactionHash);
