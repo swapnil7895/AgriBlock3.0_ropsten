@@ -55,7 +55,7 @@ const handleWeiCal = () => {
             }
             else
             {
-                alert(error.message);
+                //alert(error.message);
             }
             }
         )
