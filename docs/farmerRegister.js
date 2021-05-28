@@ -43,7 +43,7 @@ const handleFarmerRegister = () => {
       //gasPrice: 10000,
       //gas: 1000000
     })
-    .on('transactionHash', h => { alert("Registered successfully!   Transaction hash: " + h) })
+    .on('transactionHash', h => { alert(" Wait till transaction is being confirmed.. \nTransaction hash: " + h) })
     .on('confirmation', c => { console.logt(c) })
     .on('error', e => { alert("Error: " + e.message) })
     .then(
