@@ -85,7 +85,7 @@ const handleBuyFromFarmer = () => {
             from: web3.eth.currentProvider.selectedAddress,
             gasPrice: 10000, gas: 1000000, value: val
         })
-        .on('transactionHash', h => { alert("Wait till block gets mined....!\n Transaction hash is  " + h) })
+        .on('transactionHash', h => { alert(" Wait till transaction is being confirmed.. \n Transaction hash is  " + h) })
         .on('confirmation', c => { console.log(c) })
         .on('error', e => { alert(e.message) })
         .then(
