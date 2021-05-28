@@ -48,9 +48,17 @@ ethEnabled();
         gas:1000000
       }
     )
-   .on('transactionHash',h=>{alert("Registered successfully!! \nTransaction Hash:"+h)})
+   .on('transactionHash',h=>{alert(" Wait till transaction is being confirmed.. \nTransaction Hash:"+h)})
    .on('error',e=>{alert(e.message)})
-   .then();
+   .then(
+       result => {
+        alert("Registered successfully!   \nTransaction hash: " + result.transactionHash)
+        alert("Block Hash " + result.blockHash);
+        console.log(result);
+        alert("Block Number " + result.blockNumber);
+      }
+    );
+    // Wait till transaction is being confirmed..
    
   }
   sdRegisterButton.addEventListener("click",handleSubdealerRegister);
