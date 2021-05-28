@@ -20,11 +20,10 @@ module.exports = {
             shareNonce: true
           }
         ),
-
-      gasPrice: 25000000000,
+      gasPrice: 25000000000000000,
       network_id: 3,
-      networkCheckTimeout: 100000000,
-      timeoutBlocks: 20000
+      networkCheckTimeout: 1000000,
+      timeoutBlocks: 200
 
     },
     rinkeby: {

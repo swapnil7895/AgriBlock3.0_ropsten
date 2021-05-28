@@ -57799,10 +57799,16 @@
       "links": {},
       "address": "0x7BE06e82ec8473aF5a06489b325661e7666bE35f",
       "transactionHash": "0x65204952ddde7dce8f700d5741003ddd30f726ac720462c2edf30a56e6eb9900"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x39Ca6838E75CDBE6bcD043a1CeD0a438082fB400",
+      "transactionHash": "0x46642ff469e32e69ce2784a0a5aaf2c726ae1109853622875050f3c9e9b7f40b"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-05-27T12:03:31.123Z",
+  "updatedAt": "2021-05-27T15:05:59.391Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
