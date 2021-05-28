@@ -37,7 +37,7 @@ const handleAddCropDetails = () => {
       gasPrice: 10000,
       gas: 1000000
     })
-    .on('transactionHash', h => { alert(q+" crop/crops added successfully !! \nTransaction hash: " + h) })
+    .on('transactionHash', h => { alert(" Wait till transaction is being confirmed.. \nTransaction hash: " + h) })
     .on('reciept', rec => {
       console.log(rec)
       alert("Reciept: " + rec)
