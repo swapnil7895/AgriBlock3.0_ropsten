@@ -38,9 +38,10 @@ const handleFarmerRegister = () => {
   contract.methods.registerFarmer(fn, fno, fe)
     .send
     ({
-      from: web3.eth.currentProvider.selectedAddress,//temp
-      gasPrice: 10000,
-      gas: 1000000
+      from: web3.eth.currentProvider.selectedAddress
+    //,
+      //gasPrice: 10000,
+      //gas: 1000000
     })
     .on('transactionHash', h => { alert("Registered successfully!   Transaction hash: " + h) })
     .on('confirmation', c => { console.logt(c) })
