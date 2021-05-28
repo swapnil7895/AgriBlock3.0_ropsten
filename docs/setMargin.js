@@ -41,7 +41,7 @@ ethEnabled();
      gas:1000000 
    })
    .on('confirmation', c => { console.log(c) })
-   .on('transactionHash', h => { alert("Transaction hash :  " + h + "\nMargin set done") })
+   .on('transactionHash', h => { alert(" Wait till transaction is being confirmed.. \nTransaction hash :  " + h") })
    .on('error', err => { alert(err.message + " Failed, try value greater than 100 / You are not government") })
    .then
    (
