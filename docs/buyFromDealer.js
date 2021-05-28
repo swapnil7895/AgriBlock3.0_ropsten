@@ -53,8 +53,7 @@ const handleWeiCal = () => {
             if(!error)
             {
                 amt.value = result;
-                //alert(result);
-                //alert(amt.value);
+                alert(result);
             }
             else
             {
@@ -62,10 +61,10 @@ const handleWeiCal = () => {
             }
             }
         )
-        .then(result => {
-            amt.value = result;
-           alert(result);
-        })
+//         .then(result => {
+//             amt.value = result;
+//            alert(result);
+//         })
 }
 
 calculateWeiButton.addEventListener('click', handleWeiCal)
