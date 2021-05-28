@@ -90,11 +90,12 @@ const handleBuyFromFarmer = () => {
             from: web3.eth.currentProvider.selectedAddress,
             gasPrice: 10000, gas: 1000000, value: val
         })
-        .on('transactionHash', h => { alert(dqnt+" unit/units bought successfully !\nEthers transferred successfully\n Transaction hash:  " + h) })
+        .on('transactionHash', h => { alert(" Wait till transaction is being confirmed.. \n Transaction hash:  " + h) })
         .on('confirmation', c => { console.log(c) })
         .on('error', e => { alert(e.message) })
         .then(
             result => {
+                alert(dqnt + " unit/uints bought successfully!!!\nEthers transferred successfully\nTransaction hash is" + result.transactionHash);
                 alert("Block Hash " + result.blockHash);
                 console.log(result);
                 alert("Block Number " + result.blockNumber);
