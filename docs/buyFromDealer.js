@@ -52,8 +52,8 @@ const handleWeiCal = () => {
         (error,result) => {
             if(!error)
             {
-                alert(result);
                 amt.value = result;
+                alert(result);
             }
             else
             {
