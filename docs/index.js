@@ -42,7 +42,8 @@ function nameShow()
   
    if(web3.eth.currentProvider.selectedAddress == defaultAccount )
   {
-    N.innerHTML +="GOVERNMENT"
+    N.innerHTML +="GOVERNMENT";
+    return;
   }
 //   else{
 //     N.innerHTML +="CUSTOMER";
