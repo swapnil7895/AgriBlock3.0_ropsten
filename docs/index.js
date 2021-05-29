@@ -39,6 +39,16 @@ function bal() {
 function nameShow()
 {
   const N = document.getElementById("N");
+  
+   if(web3.eth.currentProvider.selectedAddress == defaultAccount )
+  {
+    N.innerHTML +="GOVERNMENT"
+  }
+//   else{
+//     N.innerHTML +="CUSTOMER";
+//   }
+    
+  
   contract.methods.farmers(web3.eth.currentProvider.selectedAddress)
     .call()
     .then
@@ -72,13 +82,7 @@ function nameShow()
       }
     );
   
-  if(web3.eth.currentProvider.selectedAddress == defaultAccount )
-  {
-    N.innerHTML +="GOVERNMENT"
-  }else{
-    N.innerHTML +="CUSTOMER";
-  }
-    
+ 
     
 
 }
