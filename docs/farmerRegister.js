@@ -47,16 +47,23 @@ const handleFarmerRegister = () => {
     .on('confirmation', c => { console.logt(c) })
     .on('error', e => { alert("Error: " + e.message) })
     .then(
-      (error, result) => {
-        if(error){
-          alert("Error: " + e.message);
-        }
+      (result) => {
+        
         alert("Registered successfully!   \nTransaction hash: " + result.transactionHash)
         alert("Block Hash " + result.blockHash);
         console.log(result);
         alert("Block Number " + result.blockNumber);
       }
-    );
+    )
+    .catch(
+            err=>{
+              if(err){
+              alert("Error: " + err.message);
+                     }
+                }
+          )
+    
+  
 
 }
 fRegisterButton.addEventListener("click", handleFarmerRegister);
