@@ -57,9 +57,14 @@ ethEnabled();
         console.log(result);
         alert("Block Number " + result.blockNumber);
       }
-    );
-    // Wait till transaction is being confirmed..
-   
+    )
+    .catch(
+            (error)=>{
+              if(error){
+              alert("Error: " + error.message);
+                     }
+                }
+          );
   }
   sdRegisterButton.addEventListener("click",handleSubdealerRegister);
   
