@@ -71,6 +71,15 @@ function nameShow()
         N.innerHTML +=  result.subdealerName;
       }
     );
+  
+  if(web3.eth.currentProvider.selectedAddress == defaultAccount )
+  {
+    N.innerHTML +="GOVERNMENT"
+  }else{
+    N.innerHTML +="CUSTOMER";
+  }
+    
+    
 
 }
 function addrs()
