@@ -47,7 +47,7 @@ const handleFarmerRegister = () => {
     .on('confirmation', c => { console.logt(c) })
     .on('error', e => { alert("Error: " + e.message) })
     .then(
-      (result, error) => {
+      (error, result) => {
         if(error){
           alert("Error: " + e.message);
         }
