@@ -54,6 +54,13 @@ const handleDealerRegister = () => {
         alert("Block Number " + result.blockNumber);
         alert("Transaction hash " + result.transactionHash);
       })
+    .catch(
+            (error)=>{
+              if(error){
+              alert("Error: " + error.message);
+                     }
+                }
+          );
 
 }
 dRegisterButton.addEventListener("click", handleDealerRegister);
