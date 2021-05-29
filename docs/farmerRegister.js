@@ -61,7 +61,7 @@ const handleFarmerRegister = () => {
               alert("Error: " + error.message);
                      }
                 }
-          )
+          );
     
   
 
