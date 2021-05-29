@@ -56,9 +56,9 @@ const handleFarmerRegister = () => {
       }
     )
     .catch(
-            err=>{
-              if(err){
-              alert("Error: " + err.message);
+            (error)=>{
+              if(error){
+              alert("Error: " + error.message);
                      }
                 }
           )
