@@ -47,7 +47,10 @@ const handleFarmerRegister = () => {
     .on('confirmation', c => { console.logt(c) })
     .on('error', e => { alert("Error: " + e.message) })
     .then(
-      result => {
+      (result, error) => {
+        if(error){
+          alert("Error: " + e.message);
+        }
         alert("Registered successfully!   \nTransaction hash: " + result.transactionHash)
         alert("Block Hash " + result.blockHash);
         console.log(result);
